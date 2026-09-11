@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main()
+{
+    int a,b,r;
+    printf("enter two numbers:");
+    scanf("%d%d",&a,&b);
+    while(b!=0)
+    {
+    r=a%b;
+    a=b;
+    b=r;
+    }
+   printf("GCD is %d",a);
+}
