@@ -1,0 +1,25 @@
+# include<stdio.h>
+void main()
+{
+    int legs=16;
+    int heads=6;
+    int hens,cows;
+    int flag=0;
+    for (cows=0;cows<=heads;cows++)
+        {
+            hens=heads-cows;
+            if (hens*2+cows*4==legs)
+            {
+                flag=1;
+                break;
+            }
+        }
+            if(flag==1)
+            {
+                printf("cows:%d\n",cows);
+                printf("hens:%d\n",hens);
+            }
+            else
+                printf("INVALID INPUT");
+ }
+    
