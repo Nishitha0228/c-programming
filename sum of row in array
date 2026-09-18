@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+    int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+    int rowSum=0;
+    int len=sizeof (arr)/sizeof(arr[0]);
+
+    for(int r=0;r<len;r++)
+    {
+        int rowSum=0;
+        for(int c=0;c<len;c++)
+        {
+            rowSum+=arr[r][c];
+        }
+        printf("%d\n",rowSum);
+    }
+}
