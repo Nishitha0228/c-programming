@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main()
+{
+    int a[5];
+    //find size of array
+    int len=sizeof(a)/sizeof(a[5]);
+    printf("%d",len);
+    
+    // array initialization
+    a[0]=10;
+    a[1]=20;
+    a[2]=30;
+    a[3]=40;
+    a[4]=50;
+
+    printf(" %d",a[0]);
+    printf(" %d",a[1]);
+    printf(" %d",a[2]);   
+    printf(" %d",a[3]);   
+    printf(" %d",a[4]);           
+}
