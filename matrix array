@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+  int rowSize,colSize;
+  printf("enter row size:");
+  scanf("%d",&rowSize);
+  printf("enter column size:");
+  scanf("%d",&colSize);
+  int arr[rowSize][colSize];
+  int len =sizeof(arr)/sizeof(arr[0]);
+  for(int r=0;r<len;r++)
+  {
+    for(int c=0;c<len;c++)
+    {
+        printf("\nEnter value in index[%d][%d]:",r,c);
+        scanf("%d",&arr[r][c]);
+    }
+  }
+    for(int row=0;row<len;row++)
+    {
+        for(int col=0;col<len;col++)
+        {
+            printf("%d",arr[row][col]);
+        }
+        printf("\n");
+    }
+}    
