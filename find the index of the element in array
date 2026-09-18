@@ -12,6 +12,7 @@ int main()
     {
         if(k==arr[i])
         {
+            f=true;
             printf("k value present in index: %d",i);
             
         }   
