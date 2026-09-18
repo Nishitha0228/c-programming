@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main()
+{
+    int arr[6];
+    int len=sizeof(arr)/sizeof(arr[0]);
+    printf("%d",len);
+
+
+}
