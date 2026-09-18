@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include <string.h>
+void main()
+{
+    char str[]="program";
+    char reverse[strlen(str)];
+    int j=0;
+    for(int i=strlen(str)-1;i>=0;i--){
+        reverse[j++]=str[i];
+    }
+    if (strcmp(str,reverse)==0){
+        printf("given string is palindrom:%s",str);
+    }else{
+        printf("given string is not palindrom:%s",str);
+    }
+}
