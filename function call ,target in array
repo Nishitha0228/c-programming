@@ -1,0 +1,28 @@
+#include <stdio.h>
+void check_target(int arr[],int size,int target);
+void check_target(int arr[],int size,int target)
+{
+    int flag=0;
+    for(int i=0;i<5;i++)
+        {
+            if(arr[i]==target)
+            {
+                flag=1;
+                printf("%d",i);
+            }
+            
+        }
+    if(flag==0)
+    {
+        printf("the target not found");
+    }
+}
+int add(int a,int b)
+{
+    return a+b;
+}
+int main()
+{
+    int arr[10]={10,20,30,40,50,60};
+    check_target(arr,5,50);
+}
